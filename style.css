@@ -70,4 +70,195 @@ body {
 .login-form button:hover {
     background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
     transform: translateY(-2px) scale(1.03);
+}
+
+.dashboard-container {
+    background: #fff;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    max-width: 90vw;
+    margin: 60px auto 0 auto;
+}
+
+.dashboard-container h1 {
+    color: #185a9d;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.manage-btn {
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(67, 206, 162, 0.15);
+    transition: background 0.2s, transform 0.1s;
+    margin-top: 1rem;
+}
+
+.manage-btn:hover {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.clinics-container {
+    background: #fff;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    max-width: 600px;
+    margin: 60px auto 0 auto;
+}
+
+#clinics-list {
+    width: 100%;
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.clinic-card {
+    background: #f7f7f7;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(67, 206, 162, 0.08);
+    padding: 1.2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.clinic-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #185a9d;
+}
+
+.clinic-location-input {
+    padding: 0.7rem 1rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 0.7rem;
+    font-size: 1rem;
+    background: #fff;
+    margin-bottom: 0.5rem;
+}
+
+.update-location-btn {
+    padding: 0.6rem 1.5rem;
+    border: none;
+    border-radius: 0.7rem;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.update-location-btn:hover {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.logs-container {
+    background: #fff;
+    padding: 2.5rem 2rem 2rem 2rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 340px;
+    max-width: 600px;
+    margin: 60px auto 0 auto;
+}
+
+.logs-container h1 {
+    color: #185a9d;
+    margin-bottom: 2rem;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+}
+
+.logs-btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    width: 100%;
+}
+
+.log-btn {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 0.8rem;
+    background: linear-gradient(90deg, #43cea2 0%, #185a9d 100%);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(67, 206, 162, 0.15);
+    transition: background 0.2s, transform 0.1s;
+}
+
+.log-btn:hover {
+    background: linear-gradient(90deg, #185a9d 0%, #43cea2 100%);
+    transform: translateY(-2px) scale(1.03);
+}
+
+.logs-section {
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.logs-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logs-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #185a9d;
+}
+
+.logs-count {
+    font-size: 1rem;
+    color: #43cea2;
+    font-weight: 600;
+}
+
+.logs-list {
+    max-height: 350px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.log-entry {
+    background: #f7f7f7;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(67, 206, 162, 0.08);
+    padding: 1rem 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1rem;
 } 
