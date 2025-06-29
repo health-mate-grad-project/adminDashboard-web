@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Users - Health Mate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clinics-container">
+        <img src="image.png" alt="Health Mate Logo" class="logo" style="width:60px; margin-bottom: 0.5rem;">
+        <h1>Users</h1>
+        <button class="manage-btn" style="margin-bottom:1.5rem;" onclick="window.location.href='dashboard.html'">Back to Dashboard</button>
+        <div id="usersList" style="width:100%; display:none;">
+            <table id="usersTable" style="width:100%; border-collapse:collapse;">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Type</th>
+                        <th>Profile Image</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Users will be populated here by script.js -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

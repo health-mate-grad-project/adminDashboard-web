@@ -27,4 +27,40 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Error connecting to server.');
         }
     });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Only run on users.html
+  if (window.location.pathname.endsWith('users.html')) {
+    const usersList = document.getElementById('usersList');
+    const usersTableBody = document.getElementById('usersTable').querySelector('tbody');
+    usersList.style.display = 'block';
+    usersTableBody.innerHTML = '<tr><td colspan="5">Loading users...</td></tr>';
+    fetch('http://localhost:5181/api/admin/users')
+      .then(response => response.json())
+      .then(users => {
+        usersTableBody.innerHTML = '';
+        if (!users.length) {
+          usersTableBody.innerHTML = '<tr><td colspan="5">No users found.</td></tr>';
+          return;
+        }
+        users.forEach(user => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${user.id}</td>
+            <td>${user.username}</td>
+            <td>${user.email}</td>
+            <td>${user.type}</td>
+            <td>
+              ${user.profileImageUrl ? `<img src="${user.profileImageUrl}" alt="Profile" width="50"/>` : 'N/A'}
+            </td>
+          `;
+          usersTableBody.appendChild(row);
+        });
+      })
+      .catch(error => {
+        usersTableBody.innerHTML = '<tr><td colspan="5">Failed to load users.</td></tr>';
+        console.error('Error fetching users:', error);
+      });
+  }
 }); 

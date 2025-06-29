@@ -120,7 +120,8 @@ body {
     flex-direction: column;
     align-items: center;
     min-width: 340px;
-    max-width: 600px;
+    max-width: 1200px;
+    width: 90%;
     margin: 60px auto 0 auto;
 }
 
@@ -261,4 +262,77 @@ body {
     flex-direction: column;
     gap: 0.3rem;
     font-size: 1rem;
+}
+
+
+#usersList {
+  overflow-x: auto;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+#usersTable {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 1.5rem auto;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(67, 206, 162, 0.10);
+}
+#usersTable th, #usersTable td {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+#usersTable th {
+  background: #f7f7f7;
+  color: #185a9d;
+  font-size: 1.05rem;
+  font-weight: 700;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#usersTable tr:nth-child(even) {
+  background: #f9f9f9;
+}
+#usersTable tr:hover {
+  background: #eaf6fa;
+  transition: background 0.2s;
+}
+#usersTable td {
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+/* Profile image as avatar */
+#usersTable img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid #43cea2;
+  object-fit: cover;
+  background: #e0e0e0;
+}
+
+/* User type badge */
+.user-badge {
+  display: inline-block;
+  padding: 0.3em 0.9em;
+  border-radius: 1em;
+  font-size: 0.95em;
+  font-weight: 600;
+  color: #fff;
+  background: #43cea2;
+  margin-right: 0.2em;
+  letter-spacing: 0.5px;
+}
+.user-badge.doctor {
+  background: #185a9d;
+}
+.user-badge.patient {
+  background: #43cea2;
 } 
