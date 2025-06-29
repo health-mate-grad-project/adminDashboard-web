@@ -6,11 +6,6 @@ document.addEventListener('DOMContentLoaded', async function () {
             containerId: 'login-logs-list',
             title: 'Login Logs'
         },
-        'logout-logs.html': {
-            endpoint: 'http://localhost:5181/api/admin/user-logs-logout',
-            containerId: 'logout-logs-list',
-            title: 'Logout Logs'
-        },
         'booking-logs.html': {
             endpoint: 'http://localhost:5181/api/admin/user-logs-book',
             containerId: 'booking-logs-list',
